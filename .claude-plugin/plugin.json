@@ -1,0 +1,11 @@
+{
+  "name": "framer-motion",
+  "description": "Production-grade animation patterns for React/Next.js using Motion (Framer Motion). Covers motion.div, AnimatePresence, useAnimationFrame, useMotionValue, useTransform, whileInView, useScroll, useSpring, layout animations, variants, gestures, useReducedMotion, and performance best practices.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Schoepplake"
+  },
+  "license": "MIT",
+  "keywords": ["framer-motion", "motion", "animation", "react", "nextjs", "scroll", "gesture", "transition"],
+  "skills": ["./.claude/skills/framer-motion"]
+}

@@ -1,0 +1,34 @@
+{
+  "name": "framer-motion-skill",
+  "id": "framer-motion-skill",
+  "owner": {
+    "name": "Schoepplake"
+  },
+  "metadata": {
+    "description": "Production-grade animation patterns for React/Next.js using Motion (Framer Motion)",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "framer-motion",
+      "source": "./",
+      "description": "Animation skill for React/Next.js with Motion (Framer Motion). Covers motion components, scroll animations, layout animations, gestures, accessibility (useReducedMotion), performance best practices, and recipes.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Schoepplake"
+      },
+      "keywords": [
+        "framer-motion",
+        "motion",
+        "animation",
+        "react",
+        "nextjs",
+        "scroll",
+        "gesture",
+        "transition"
+      ],
+      "category": "development",
+      "strict": false
+    }
+  ]
+}
