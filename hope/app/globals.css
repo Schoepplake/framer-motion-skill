@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Surfaces */
+  --bg: 210 20% 98%;
+  --surface: 0 0% 100%;
+  --surface-2: 210 20% 96%;
+  --border: 214 20% 90%;
+  --muted: 215 16% 47%;
+  --fg: 222 47% 11%;
+  --fg-muted: 215 16% 42%;
+
+  /* Brand — HOPE violet */
+  --primary: 250 84% 60%;
+  --primary-fg: 0 0% 100%;
+  --primary-soft: 250 100% 97%;
+
+  /* Semantic */
+  --success: 142 71% 38%;
+  --success-soft: 142 71% 95%;
+  --warning: 35 92% 45%;
+  --warning-soft: 40 96% 94%;
+  --danger: 0 72% 51%;
+  --danger-soft: 0 86% 97%;
+  --info: 217 91% 55%;
+  --info-soft: 214 95% 96%;
+
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: hsl(var(--bg));
+  color: hsl(var(--fg));
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Thin, unobtrusive scrollbars */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--border));
+  border-radius: 9999px;
+  border: 3px solid hsl(var(--bg));
+}
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--muted) / 0.5);
+}
+
+/* Focus ring used across interactive primitives */
+.focus-ring {
+  outline: none;
+}
+.focus-ring:focus-visible {
+  outline: 2px solid hsl(var(--primary));
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
